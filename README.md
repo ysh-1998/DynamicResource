@@ -204,7 +204,7 @@ ChatGLM_Daily数据集，100k+400k配置：
 
 ## 常见问题 / FAQ
 
-- **数据路径 / Data path**：脚本默认读 `simulation_data/ChatGLM_Daily.csv`，需先运行 `resource_simulation.py` 生成。
-- **LSTM checkpoint / Checkpoint**：RL训练需要预训练的LSTM模型（`models/lstm_traffic_*.pth`），先用 `train_traffic.py` 训练。
+- **数据路径**：脚本默认读 `simulation_data/ChatGLM_Daily.csv`，需先运行 `resource_simulation.py` 生成。
+- **LSTM checkpoint**：RL训练需要预训练的LSTM模型（`models/lstm_traffic_*.pth`），先用 `train_traffic.py` 训练。
 - **CUDA / GPU**：检查 `python -c "import torch; print(torch.cuda.is_available())"`；多卡训练用 `run_rl_train_and_evaluate_ddp.sh`。
-- **SB3安装 / SB3**：`pip install stable-baselines3 gymnasium`（已在requirements.txt）。
+- **SB3安装**：`pip install stable-baselines3 gymnasium`（已在requirements.txt）。
