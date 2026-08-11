@@ -1,0 +1,12 @@
+*.pyc
+models/
+simulation_data/
+swanlog/
+*.pdf
+logs/
+*.log
+rl_eval_results*/
+rl_models*/
+*.pptx
+*ppt*
+__pycache__/
